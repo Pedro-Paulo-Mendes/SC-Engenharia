@@ -492,23 +492,23 @@ header {
 }
 
 /* =========================================
-   AVISO DE COOKIES (LGPD)
+   AVISO DE COOKIES (LGPD) - CORREÇÃO MOBILE
 ========================================= */
 .cookie-banner {
     position: fixed;
-    bottom: -100px; /* Escondido por padrão, o JS vai animar para subir */
+    bottom: -200px; /* Aumentado para garantir que fique 100% escondido antes de subir */
     left: 0;
     width: 100%;
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 1rem 2rem;
+    /* O "env(safe-area-inset-bottom)" é a mágica que impede o iPhone de cortar o banner */
+    padding: 1rem 2rem calc(1rem + env(safe-area-inset-bottom)) 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.3);
     z-index: 9999;
     transition: bottom 0.5s ease-in-out;
-    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -518,13 +518,22 @@ header {
 
 .cookie-banner p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* Fonte um pingo menor para não ocupar tanta tela */
     flex: 1;
+    line-height: 1.5;
 }
 
+/* Ajustes específicos para as telas de celular */
 @media (max-width: 768px) {
     .cookie-banner {
         flex-direction: column;
         text-align: center;
+        padding: 1.5rem 1rem calc(1.5rem + env(safe-area-inset-bottom)) 1rem;
+    }
+    
+    .cookie-banner .cta-btn {
+        width: 100%; /* Faz o botão "Entendi" ocupar a largura inteira */
+        padding: 0.8rem;
+        justify-content: center;
     }
 }
