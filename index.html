@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SC Engenharia</title>
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <meta name="description" content="Especialistas em projetos estruturais, execução de obras e laudos técnicos em São José do Rio Preto e região. Solidez e confiança para o seu projeto.">
+    <meta name="keywords" content="Engenharia, Projetos Estruturais, Construção, Reformas, Laudo Técnico, São José do Rio Preto">
+    <meta name="author" content="SC Engenharia">
+    
+    <meta property="og:title" content="Engenharia de Excelência">
+    <meta property="og:description" content="Projetos estruturais e execução de obras com foco em segurança e prazos.">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Logo SC Engenharia" class="logo-img">
+                 <span>Engenharia</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section" style="background-image: url('img/rodovia.jpeg'); background-size: cover; background-position: center; position: relative;">
+        <div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(30, 41, 59, 0.85);"></div>
+        
+        <div class="hero-content container" style="position: relative; z-index: 1;">
+            <h1>Transformando Grandes Desafios em Soluções Sólidas</h1>
+            <p>Engenharia de excelência em São José do Rio Preto. Segurança, normas técnicas e entrega no prazo para o sucesso do seu empreendimento.</p>
+            
+            <div class="hero-buttons">
+                <!-- Botão Secundário (Leva para o Portfólio) -->
+                <a href="#portfolio" class="cta-btn btn-outline">Ver Projetos Realizados</a>
+                
+                <!-- Botão Principal (Leva para o Formulário de Contato) -->
+                <a href="#contato" class="cta-btn btn-primary">Solicitar Orçamento</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about-section container section-padding">
+        <div class="about-text">
+            <h2>Sobre a Nossa Empresa</h2>
+            <div class="divider"></div>
+            <p>Com anos de experiência no mercado, transformamos desafios complexos em soluções eficientes e seguras. Nosso compromisso é com a qualidade de ponta a ponta, respeitando rigorosamente as normas técnicas, o orçamento e os prazos de cada cliente.</p>
+        </div>
+    </section>
+
+    <section id="servicos" class="services-section bg-light section-padding">
+        <div class="container">
+            <h2 class="text-center">Nossos Serviços</h2>
+            <div class="divider center"></div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fa-solid fa-compass-drafting service-icon"></i>
+                    <h3>Projetos Estruturais</h3>
+                    <p>Dimensionamento seguro e otimizado para obras residenciais e comerciais, garantindo estabilidade e economia.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-helmet-safety service-icon"></i>
+                    <h3>Execução de Obras</h3>
+                    <p>Gestão completa do canteiro de obras, do alicerce ao acabamento, com supervisão técnica diária.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-building service-icon"></i>
+                    <h3>Reformas Corporativas</h3>
+                    <p>Adequação de espaços comerciais para máxima funcionalidade e design, sem interrupções desnecessárias.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-file-signature service-icon"></i>
+                    <h3>Laudos Técnicos</h3>
+                    <p>Vistorias e emissão de laudos de engenharia (ART), atestando a integridade estrutural do seu patrimônio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section container section-padding">
+        <h2 class="text-center">Projetos Realizados</h2>
+        <div class="divider center"></div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item"><img src="img/linha.jpg" alt="Obra 1"></div>
+            <div class="portfolio-item"><img src="img/pedágio.jpeg" alt="Obra 2"></div>
+            <div class="portfolio-item"><img src="img/rodovia.jpeg" alt="Obra 3"></div>
+            <div class="portfolio-item"><img src="img/sala_tam.jpg" alt="Obra 4"></div>
+        </div>
+    </section>
+
+   <footer id="contato" class="footer-section bg-light section-padding">
+        <div class="container footer-grid">
+            
+            <div class="contact-form-container">
+                <h3>Solicite um Orçamento</h3>
+                <p>Fora do horário comercial? Deixe sua mensagem e retornaremos.</p>
+                <form action="https://formspree.io/f/mpqernln" method="POST" class="contact-form">
+                    <input type="text" name="nome" placeholder="Seu Nome / Empresa" required>
+                    <input type="email" name="email" placeholder="Seu E-mail" required>
+                    <input type="tel" name="telefone" placeholder="Seu Telefone / WhatsApp" required>
+                    <textarea name="mensagem" rows="4" placeholder="Fale um pouco sobre o seu projeto ou dúvida..." required></textarea>
+                    <button type="submit" class="cta-btn btn-form">Enviar Mensagem <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+            
+            <div class="footer-info-map">
+                <div class="footer-contact-info">
+                    <h3 style="color: var(--primary-color);">Atendimento Direto</h3>
+                    <p style="color: var(--text-dark);"><i class="fa-solid fa-envelope"></i> <scengenharia class="com">scengenharia@gmail.com</scengenharia></p>
+                    <p style="color: var(--text-dark);"><i class="fa-solid fa-phone"></i> (17) 98157-9182</p>
+
+                    <div class="footer-action-buttons" style="display: flex; flex-direction: column; gap: 0.8rem; margin: 1.5rem 0;">
+                        <button class="cta-btn whatsapp-btn btn-small" style="width: 100%; justify-content: center;">WhatsApp Direto <i class="fa-brands fa-whatsapp"></i></button>
+                        <a href="https://www.linkedin.com/in/sidnei-cividanes-5372a753/" target="_blank" class="cta-btn linkedin-btn btn-small" style="width: 100%; justify-content: center; text-decoration: none;">Perfil no LinkedIn <i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119330.1478148902!2d-49.46747190013845!3d-20.81665679313988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad5f4f464013%3A0xa1ea1cc9b8ce8459!2sS%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1717951600000!5m2!1spt-BR!2sbr" 
+                        width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="footer-bottom text-center" style="background-color: var(--primary-color); color: white; padding: 1rem; margin-top: 2rem;">
+            <p>© 2026 SC Engenharia. Todos os direitos reservados.</p>
+        </div>
+    </footer> 
+
+    <script src="script.js"></script>
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5517981579182?text=Ol%C3%A1%2C%20Sidnei!%20Visitei%20o%20site%20da%20SC%20Engenharia%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" class="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Aviso de Cookies (LGPD) -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Usamos cookies para garantir que você tenha a melhor experiência em nosso site. Ao continuar navegando, você concorda com a nossa política.</p>
+        <button id="accept-cookies" class="cta-btn btn-small">Entendi</button>
+    </div>
+
+</body>
+</html>
